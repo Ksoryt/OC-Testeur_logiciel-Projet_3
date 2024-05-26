@@ -11,33 +11,32 @@
     <link rel="stylesheet" href="css/tablet.css" media="(min-width: 768px) and (max-width: 1199.98px)">
     <link rel="stylesheet" href="css/extra_large.css" media="(min-width: 1440px)">
     <link rel="icon" href="images/logo/Booki.png" type="image/png">
-    
 </head>
-<body dir="ltr">
-<div class="container">        
+<body dir="ltr"> 
+<div class="container">     
     <header class="header">
-        <img src="images/logo/Booki.png" srcset="images/Booki.png, images/Booki@3x.png 3x" alt="Logo Booki" height="19"
+        <img src="images/logo/Booki.png" srcset="images/logo/Booki.png, images/logo/Booki@3x.png 3x" alt="Logo Booki" height="19"
             class="header_logo">
-            <nav class="header_nav">
-                <ul class="nav">
-                    <li class="nav_item nam_item--active">
-                        <a href="#logdings" class="nav_link">Hébergement</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#activities" class="nav_link">Activités</a>
-                    </li>
-                </ul>
-            </nav>
+        <nav class="header_nav">
+            <ul class="nav">
+                <li class="nav_item nam_item--active">
+                    <a href="#logdings" class="nav_link">Hébergement</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#activities" class="nav_link">Activités</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-        <main>
-            <section class="research">
-                <h1 class="research_title">Trouver votre hébergement pour vos vacances de rêve</h1>
-                <p class="research_tagline">En plein centre ville ou en pleine nature</p>
-                <form class="form">
-                    <div class="form_group">
-                        <label for="search" class="form_label">
-                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512">
-                                <path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"/>
+    <main>
+        <section class="research">
+            <h1 class="research_title">Trouver votre hébergement pour vos vacances de rêve</h1>
+            <p class="research_tagline">En plein centre ville ou en pleine nature</p>
+            <form class="form">
+                <div class="form_group">
+                    <label for="search" class="form_label">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512">
+                            <path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"/>
                             </svg>
                             <span class="sr-only">Localisation</span>
                         </label>
@@ -60,7 +59,7 @@
                             </span>
                             Economique
                         </label>
-                        <label class="form_check--user" for="chk-familial">
+                        <label class="form_check form_check--user" for="chk-familial">
                             <input type="checkbox" id="chk-familial">
                             <span class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -69,7 +68,7 @@
                             </span>
                             Familial
                         </label>
-                        <label class="form_check--heart" for="chk_romantique">
+                        <label class="form_check form_check--heart" for="chk_romantique">
                             <input type="checkbox" id="chk_romantique">
                             <span class="icon">
                                 <svg class="icone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -98,7 +97,7 @@
                     <p>Plus les 500 logements disponibles dans cette ville</p>
                 </div>
             </section>
-            <section class="lodgings_tilte" id="lodgings">
+            <section class="lodgings" id="lodgings">
                 <h2 class="lodgings_title">Hébergement à Marseille</h2>
                 <div class="lodgings_list">
                     <article class="lodgings">
@@ -106,8 +105,8 @@
                             <img class="lodging-image" src="images/hebergements/marcus-loke.jpg" alt="Chambre de l'Auberge La Canebière">
                             <div class="lodging-body">
                                 <h3 class="lodgings_tilte">Auberge La Canebière</h3>
-                                <p class="lodging-decription">Nuit à partir de 25<span>€</span>.</p>
-                                <div class="lodging-rating">
+                                <p class="lodging_decription">Nuit à partir de 25<span>€</span>.</p>
+                                <div class="lodging_rating">
                                     <span class="icon icon--star-filled">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                                             <path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/>
@@ -324,9 +323,9 @@
                         </a>
                     </article>
                 </div>
-                <a href="#" class="lodging lodging_more">Afficher plus</a>
+                <a href="#" class="lodgings lodging_more">Afficher plus</a>
             </section>
-            <section class="lodging lodging--most-popular">
+            <section class="lodgings lodging--most-popular">
                 <h2 class="lodging_title">
                     Les plus populaires
                     <span class="icon">
@@ -338,11 +337,11 @@
                 <div class="lodgings_list">
                     <article class="lodging">
                         <a href="#">
-                            <img class="lodging-image" src="images/hebergements/emile-guillemot.jpg" alt="Chambre de l'Hôtel Le soleil du matin">
+                            <img class="lodging_image" src="images/hebergements/emile-guillemot.jpg" alt="Chambre de l'Hôtel Le soleil du matin">
                             <div class="lodging_body">
                                 <h3 class="lodging_title">Hôtel Le soleil du matin</h3>
-                                <p class="lodging-decription">Nuit à partir de 128<span>€</span>.</p>
-                                <div class="lodging-rating">
+                                <p class="lodging_description">Nuit à partir de 128<span>€</span>.</p>
+                                <div class="lodging_rating">
                                     <span class="icon icon--star-filled">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                                             <path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/>
@@ -375,11 +374,11 @@
                     </article>
                     <article class="lodging">
                         <a href="#">
-                            <img class="lodging-image" src="images/hebergements/aw-creative.jpg" alt="Chambres d'hôtes au coeur de l'eau">
-                            <div class="lodging-body">
+                            <img class="lodging_image" src="images/hebergements/aw-creative.jpg" alt="Chambres d'hôtes au coeur de l'eau">
+                            <div class="lodging_body">
                                 <h3 class="lodging_title">Chambres d'hôtes Au coeur de l'eau</h3>
-                                <p class="lodging_description">Nuit à partir de 41<span>€</span>.</p>
-                                <div class="lodging-rating">
+                                <p class="lodging_description">Nuit à partir de 71<span>€</span>.</p>
+                                <div class="lodging_rating">
                                     <span class="icon icon--star-filled">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                                             <path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/>
@@ -412,11 +411,11 @@
                     </article>
                     <article class="lodging">
                         <a href="#">
-                            <img class="lodging-image" src="images/hebergements/febrian-zakaria2.jpg" alt="Chambre de hotel blue et moi blanc">
-                            <div class="lodging-body">
-                                <h3 class="lodging_title">Hotel blue et Blance</h3>
-                                <p class="lodging__description">Nuit à partir de 68<span>€</span>.</p>
-                                <div class="lodging__rating">
+                            <img class="lodging_image" src="images/hebergements/febrian-zakaria2.jpg" alt="Chambre de Hôtel Bleu et Blanc">
+                            <div class="lodging_body">
+                                <h3 class="lodging_title">Hôtel Bleu et Blanc</h3>
+                                <p class="lodging_description">Nuit à partir de 68<span>€</span>.</p>
+                                <div class="lodging_rating">
                                     <span class="icon icon--star-filled">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                                             <path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/>
