@@ -1,0 +1,177 @@
+body {
+    padding: 0;
+  }
+
+  .container {
+    padding: 0;
+  }
+  main section {
+    padding: var(--spacing-base);
+  }
+
+  main section {
+    padding: var(--spacing-base);
+  }
+
+  .header {
+    flex-direction: column;
+    margin-bottom: var(--spacing-base);
+    align-items: stretch;
+  }
+
+  .header_logo {
+    height: 40px;
+    object-fit: contain;
+    margin: calc(var(--spacing-base) * 1.5) 0;
+  }
+
+  .header .nav_item {
+    flex-basis: 50%;
+    padding: 0 0 var(--spacing-base);
+  }
+
+  .header .nav_item:not(.nav_item--active):before {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: var(--color-secondary);
+  }
+
+  .header .nav_item:before {
+    top: unset;
+    bottom: 0;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .research {
+    order: 1;
+  }
+
+  .form_group {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .form_input {
+    width: calc(100% + 1rem - 100px);
+  }
+
+  .form_submit {
+    width: 50px;
+    border-radius: 1rem;
+    margin-left: -1rem;
+  }
+
+  .form_submit > span {
+    display: none;
+  }
+
+  .form_submit > .icon {
+    display: block;
+    fill: var(--color-white);
+  }
+
+  .form_legend {
+    width: 100%;
+  }
+
+  .form_group--fieldset {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-base);
+  }
+
+  .form_check {
+    justify-content: flex-start;
+    font-size: var(--text-xsmall);
+    padding-right: unset;
+    width: calc(50% - (var(--spacing-base) / 2));
+  }
+
+  .form_check > .icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .form_check > .icon > svg {
+    max-width: 1rem;
+    max-height: 1rem;
+  }
+
+  .research_info {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .research_info > p {
+    padding-top: .385rem;
+  }
+
+  .research_info > span {
+    flex-shrink: 0;
+  }
+
+  .lodgings {
+    border-radius: unset;
+    flex-basis: unset;
+    order: 3;
+    padding: calc(2 * var(--spacing-base)) var(--spacing-base);
+  }
+
+  .lodgings:not(.lodgings--most-popular) {
+    background: unset;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .lodgings--most-popular {
+    order: 2;
+  }
+  
+  .lodgings_list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lodgings:not(.lodgings--most-popular) .lodging_image {
+    height: 125px;
+  }
+
+  .lodgings--most-popular .lodging_image {
+    width: 40%;
+    aspect-ratio: 1/1;
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  .activities {
+    order: 4;
+  }
+
+  .activities_list {
+    height: unset;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .activity_image {
+    height: 150px;
+  }
+
+  .footer {
+    background: var(--color-secondary);
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: calc(2 * var(--spacing-base));
+  }
