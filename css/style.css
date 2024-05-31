@@ -289,3 +289,217 @@ main {
 .form_check > input[type=checkbox] {
   display: none;
 }
+
+.lodgings {
+  display: flex;
+  flex-direction: column;
+  grid-area: 2 / 1 / 3 / 3;
+  background: var(--color-secondary);
+  border-radius: 1rem;
+  padding: calc(2 * var(--spacing-base));
+}
+
+.lodgings--most-popular {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.lodgings_list {
+  flex-grow: 1;
+  margin-top: calc(2 * var(--spacing-base));
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: calc(2 * var(--spacing-base));
+  grid-row-gap: calc(2 * var(--spacing-base));
+}
+
+.lodgings--most-popular > .lodgings_list {
+  display: flex;
+  flex-direction: column;
+}
+
+.lodgings_title, .activities_title {
+  font-weight: var(--fw-bold);
+  font-size: var(--text-title);
+}
+
+.lodgings_more {
+  display: inline-block;
+  margin-top: calc(2 * var(--spacing-base));
+  color: inherit;
+  text-decoration: none;
+  font-weight: var(--fw-bold);
+  font-size: var(--text-large);
+}
+
+.lodging {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.lodging > a {
+  display: flex;
+  flex-direction: column;
+  gap: calc(1 / 2 * var(--spacing-base));
+  background: var(--color-white);
+  padding: calc(1 / 4 * var(--spacing-base));
+}
+
+.lodgings--most-popular .lodging > a {
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.lodgings--most-popular .lodgings_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lodgings--most-popular .lodgings_title > .icon {
+  height: 18px;
+  width: 18px;
+}
+
+.lodgings--most-popular .lodgings_title > .icon > svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--color-primary);
+}
+
+.lodgings--most-popular .lodging_image {
+  width: 40%;
+  aspect-ratio: 1/1;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.lodging_body {
+  display: flex;
+  flex-direction: column;
+  gap: calc(1 / 2 * var(--spacing-base));
+  padding: .5rem;
+}
+
+.lodging_title {
+  font-weight: var(--fw-bold);
+}
+
+.lodging_description {
+  font-size: var(--text-small);
+}
+
+.lodging_description > span {
+  font-weight: var(--fw-bold);
+}
+
+.lodging_rating {
+  margin-top: auto;
+  display: flex;
+  gap: 2px;
+}
+
+.lodging_image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.lodgings .icon {
+  height: 12px;
+  width: 12px;
+}
+
+.icon--star-filled, .icon--star-empty {
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+.icon--star-filled > svg {
+  fill: var(--color-primary);
+}
+
+.icon--star-empty {
+  fill: var(--color-secondary);
+}
+
+.lodging, .activity {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 3px 15px;
+}
+
+.activities {
+  grid-area: 3 / 1 / 4 / 4;
+}
+
+.activities_list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: calc(2 * var(--spacing-base));
+  grid-row-gap: 0;
+  margin-top: var(--spacing-base);
+}
+
+.activity {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.activity > a {
+  display: flex;
+  flex-direction: column;
+}
+
+.activity_image {
+  aspect-ratio: 172.5/227;
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.activity_title {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  font-weight: var(--fw-bold);
+  padding: var(--spacing-base);
+}
+
+.lodging > a, .activity > a
+{
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer {
+  padding: calc(2 * var(--spacing-base)) calc(3 * var(--spacing-base));
+  background: var(--color-secondary);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: calc(2 * var(--spacing-base));
+}
+
+.footer .column {
+  display: flex;
+  flex-direction: column;
+  gap: calc(3 / 2 * var(--spacing-base));
+}
+
+.footer .column_title {
+  font-weight: var(--fw-bold);
+}
+
+.footer .nav_item-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: calc(1 * var(--spacing-base));
+}
+
+.footer .nav_item {
+  font-size: var(--text-small);
+}
