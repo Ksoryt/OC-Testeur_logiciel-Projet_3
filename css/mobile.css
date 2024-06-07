@@ -1,3 +1,10 @@
+@media (max-width: 767px) {
+    .form_check:hover,
+    .form_check {
+      animation: none;
+    }
+  }
+  
 body {
     padding: 0;
   }
